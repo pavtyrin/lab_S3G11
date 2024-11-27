@@ -16,6 +16,20 @@ public:
     ~MainWindow();
 
 private:
+    double currentValue;        // Текущее значение
+    QString pendingOperation;  // Ожидаемая операция
+
+private slots:
+    void digitClicked();        // Обработка нажатия на цифру
+    void operationClicked();    // Обработка нажатия на операцию
+    void clearClicked();        // Сброс данных
+    void equalsClicked();       // Вычисление результата
+    void absClicked();
+    void sinClicked();
+    void logClicked();
+    void dbClicked();
+
+private:
     Ui::MainWindow *ui;
 };
 
